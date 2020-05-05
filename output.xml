@@ -1,0 +1,325 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 3.1.2 (Python 3.8.1 on win32)" generated="20200316 12:33:53.272" rpa="false">
+<suite id="s1" name="Coupanproduct" source="E:\Robot framwork\BigC\coupanproduct.robot">
+<test id="s1-t1" name="Login to admin">
+<kw name="Login" library="LoginBigc">
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<arguments>
+<arg>${site}</arg>
+<arg>${Browser}</arg>
+</arguments>
+<msg timestamp="20200316 12:33:53.492" level="INFO">Opening browser 'Chrome' to base url 'https://sit-big-c.2c2p.com/portal/login'.</msg>
+<status status="PASS" starttime="20200316 12:33:53.492" endtime="20200316 12:34:05.173"></status>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20200316 12:34:05.174" endtime="20200316 12:34:09.326"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>2s</arg>
+</arguments>
+<msg timestamp="20200316 12:34:11.326" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20200316 12:34:09.326" endtime="20200316 12:34:11.326"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>//input[contains(@placeholder,'Enter your email')]</arg>
+<arg>${Email}</arg>
+</arguments>
+<msg timestamp="20200316 12:34:11.328" level="INFO">Typing text 'shruitkirti.tun@2c2pexternal.com' into text field '//input[contains(@placeholder,'Enter your email')]'.</msg>
+<status status="PASS" starttime="20200316 12:34:11.327" endtime="20200316 12:34:11.609"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>//input[@placeholder='Enter your password']</arg>
+<arg>${Password}</arg>
+</arguments>
+<msg timestamp="20200316 12:34:11.610" level="INFO">Typing text 'Shruti@123' into text field '//input[@placeholder='Enter your password']'.</msg>
+<status status="PASS" starttime="20200316 12:34:11.609" endtime="20200316 12:34:11.722"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>2s</arg>
+</arguments>
+<msg timestamp="20200316 12:34:13.737" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20200316 12:34:11.722" endtime="20200316 12:34:13.737"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>//button[@class='btn login_btn form-control']</arg>
+</arguments>
+<msg timestamp="20200316 12:34:13.737" level="INFO">Clicking element '//button[@class='btn login_btn form-control']'.</msg>
+<status status="PASS" starttime="20200316 12:34:13.737" endtime="20200316 12:34:13.852"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>5s</arg>
+</arguments>
+<msg timestamp="20200316 12:34:18.854" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20200316 12:34:13.852" endtime="20200316 12:34:18.854"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>//span[contains(text(),'Coupons')]</arg>
+</arguments>
+<msg timestamp="20200316 12:34:18.855" level="INFO">Clicking element '//span[contains(text(),'Coupons')]'.</msg>
+<status status="PASS" starttime="20200316 12:34:18.855" endtime="20200316 12:34:18.996"></status>
+</kw>
+<status status="PASS" starttime="20200316 12:33:53.492" endtime="20200316 12:34:18.996"></status>
+</kw>
+<status status="PASS" starttime="20200316 12:33:53.492" endtime="20200316 12:34:18.998" critical="yes"></status>
+</test>
+<test id="s1-t2" name="Coupon Product">
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>2s</arg>
+</arguments>
+<msg timestamp="20200316 12:34:21.003" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20200316 12:34:19.002" endtime="20200316 12:34:21.003"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>xpath=//a[contains(text(),'Coupon Products')]</arg>
+</arguments>
+<msg timestamp="20200316 12:34:21.005" level="INFO">Clicking element 'xpath=//a[contains(text(),'Coupon Products')]'.</msg>
+<status status="PASS" starttime="20200316 12:34:21.004" endtime="20200316 12:34:21.143"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>4s</arg>
+</arguments>
+<msg timestamp="20200316 12:34:25.153" level="INFO">Slept 4 seconds</msg>
+<status status="PASS" starttime="20200316 12:34:21.143" endtime="20200316 12:34:25.153"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>xpath=//button[@class='btn btn-success btn-sm mb-3 btn-add-new ng-star-inserted']</arg>
+</arguments>
+<msg timestamp="20200316 12:34:25.153" level="INFO">Clicking element 'xpath=//button[@class='btn btn-success btn-sm mb-3 btn-add-new ng-star-inserted']'.</msg>
+<status status="PASS" starttime="20200316 12:34:25.153" endtime="20200316 12:34:26.051"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>2s</arg>
+</arguments>
+<msg timestamp="20200316 12:34:28.058" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20200316 12:34:26.052" endtime="20200316 12:34:28.058"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>//input[@class='form-control ng-untouched ng-pristine ng-valid']</arg>
+<arg>3</arg>
+</arguments>
+<msg timestamp="20200316 12:34:28.058" level="INFO">Typing text '3' into text field '//input[@class='form-control ng-untouched ng-pristine ng-valid']'.</msg>
+<status status="PASS" starttime="20200316 12:34:28.058" endtime="20200316 12:34:28.250"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>//input[@placeholder='ex.1233 3455 3456']</arg>
+<arg>5678</arg>
+</arguments>
+<msg timestamp="20200316 12:34:28.251" level="INFO">Typing text '5678' into text field '//input[@placeholder='ex.1233 3455 3456']'.</msg>
+<status status="PASS" starttime="20200316 12:34:28.251" endtime="20200316 12:34:28.397"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>//input[@placeholder='Enter product name']</arg>
+<arg>testtype</arg>
+</arguments>
+<msg timestamp="20200316 12:34:28.398" level="INFO">Typing text 'testtype' into text field '//input[@placeholder='Enter product name']'.</msg>
+<status status="PASS" starttime="20200316 12:34:28.397" endtime="20200316 12:34:28.546"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>//input[@placeholder='Enter product price']</arg>
+<arg>1000</arg>
+</arguments>
+<msg timestamp="20200316 12:34:28.547" level="INFO">Typing text '1000' into text field '//input[@placeholder='Enter product price']'.</msg>
+<status status="PASS" starttime="20200316 12:34:28.546" endtime="20200316 12:34:28.668"></status>
+</kw>
+<kw name="Select From List By Label" library="SeleniumLibrary">
+<doc>Selects options from selection list ``locator`` by ``labels``.</doc>
+<arguments>
+<arg>//select[@id='creditTypeId']</arg>
+<arg>Big Card Point</arg>
+</arguments>
+<msg timestamp="20200316 12:34:28.668" level="INFO">Selecting options from selection list '//select[@id='creditTypeId']' by label Big Card Point.</msg>
+<status status="PASS" starttime="20200316 12:34:28.668" endtime="20200316 12:34:28.767"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>//input[@placeholder='Enter promotion value']</arg>
+<arg>100</arg>
+</arguments>
+<msg timestamp="20200316 12:34:28.768" level="INFO">Typing text '100' into text field '//input[@placeholder='Enter promotion value']'.</msg>
+<status status="PASS" starttime="20200316 12:34:28.768" endtime="20200316 12:34:28.904"></status>
+</kw>
+<kw name="Select From List By Label" library="SeleniumLibrary">
+<doc>Selects options from selection list ``locator`` by ``labels``.</doc>
+<arguments>
+<arg>//select[@id='promotionTypeId']</arg>
+<arg>Percent</arg>
+</arguments>
+<msg timestamp="20200316 12:34:28.904" level="INFO">Selecting options from selection list '//select[@id='promotionTypeId']' by label Percent.</msg>
+<status status="PASS" starttime="20200316 12:34:28.904" endtime="20200316 12:34:29.002"></status>
+</kw>
+<kw name="Execute Javascript" library="SeleniumLibrary">
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<arguments>
+<arg>window.scrollTo(0,200)</arg>
+</arguments>
+<msg timestamp="20200316 12:34:29.003" level="INFO">Executing JavaScript:
+window.scrollTo(0,200)
+Without any arguments.</msg>
+<status status="PASS" starttime="20200316 12:34:29.003" endtime="20200316 12:34:29.008"></status>
+</kw>
+<kw name="Select From List By Label" library="SeleniumLibrary">
+<doc>Selects options from selection list ``locator`` by ``labels``.</doc>
+<arguments>
+<arg>//select[@id='categoryNameId']</arg>
+<arg>Big C Privilege / บิ๊กซี</arg>
+</arguments>
+<msg timestamp="20200316 12:34:29.009" level="INFO">Selecting options from selection list '//select[@id='categoryNameId']' by label Big C Privilege / บิ๊กซี.</msg>
+<status status="PASS" starttime="20200316 12:34:29.008" endtime="20200316 12:34:29.112"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>2s</arg>
+</arguments>
+<msg timestamp="20200316 12:34:31.120" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20200316 12:34:29.112" endtime="20200316 12:34:31.120"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>//input[@role='listbox']</arg>
+</arguments>
+<msg timestamp="20200316 12:34:31.120" level="INFO">Clicking element '//input[@role='listbox']'.</msg>
+<status status="PASS" starttime="20200316 12:34:31.120" endtime="20200316 12:34:31.245"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>//input[@role='listbox']</arg>
+<arg>hotel</arg>
+</arguments>
+<msg timestamp="20200316 12:34:31.246" level="INFO">Typing text 'hotel' into text field '//input[@role='listbox']'.</msg>
+<status status="PASS" starttime="20200316 12:34:31.246" endtime="20200316 12:34:31.382"></status>
+</kw>
+<kw name="Press Key" library="SeleniumLibrary">
+<doc>*DEPRECATED in SeleniumLibrary 4.0.* use `Press Keys` instead.</doc>
+<arguments>
+<arg>//input[@role='listbox']</arg>
+<arg>\\\13</arg>
+</arguments>
+<msg timestamp="20200316 12:34:31.383" level="WARN">Keyword 'SeleniumLibrary.Press Key' is deprecated. use `Press Keys` instead.</msg>
+<status status="PASS" starttime="20200316 12:34:31.383" endtime="20200316 12:34:31.419"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>2s</arg>
+</arguments>
+<msg timestamp="20200316 12:34:33.419" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20200316 12:34:31.419" endtime="20200316 12:34:33.419"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>//input[@placeholder='Enter display name (EN)']</arg>
+<arg>Product one</arg>
+</arguments>
+<msg timestamp="20200316 12:34:33.421" level="INFO">Typing text 'Product one' into text field '//input[@placeholder='Enter display name (EN)']'.</msg>
+<status status="PASS" starttime="20200316 12:34:33.420" endtime="20200316 12:34:33.710"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>2s</arg>
+</arguments>
+<msg timestamp="20200316 12:34:35.716" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20200316 12:34:33.711" endtime="20200316 12:34:35.716"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>//textarea[@placeholder='Enter product description (EN)']</arg>
+<arg>This product is for testing purpose.</arg>
+</arguments>
+<msg timestamp="20200316 12:34:35.716" level="INFO">Typing text 'This product is for testing purpose.' into text field '//textarea[@placeholder='Enter product description (EN)']'.</msg>
+<status status="PASS" starttime="20200316 12:34:35.716" endtime="20200316 12:34:36.026"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>2s</arg>
+</arguments>
+<msg timestamp="20200316 12:34:38.028" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20200316 12:34:36.027" endtime="20200316 12:34:38.028"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>//textarea[@placeholder='Enter product details (EN)']</arg>
+<arg>This product is for testing purpose.</arg>
+</arguments>
+<msg timestamp="20200316 12:34:38.030" level="INFO">Typing text 'This product is for testing purpose.' into text field '//textarea[@placeholder='Enter product details (EN)']'.</msg>
+<status status="PASS" starttime="20200316 12:34:38.029" endtime="20200316 12:34:38.397"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>//div[@class='ck ck-editor__main']</arg>
+</arguments>
+<msg timestamp="20200316 12:34:38.398" level="INFO">Clicking element '//div[@class='ck ck-editor__main']'.</msg>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20200316 12:34:39.828" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-2.png"&gt;&lt;img src="selenium-screenshot-2.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20200316 12:34:39.460" endtime="20200316 12:34:39.828"></status>
+</kw>
+<msg timestamp="20200316 12:34:39.844" level="FAIL">ElementClickInterceptedException: Message: element click intercepted: Element &lt;div class="ck ck-editor__main" role="presentation"&gt;...&lt;/div&gt; is not clickable at point (652, 743). Other element would receive the click: &lt;div class="ck ck-toolbar__items"&gt;...&lt;/div&gt;
+  (Session info: chrome=80.0.3987.132)
+</msg>
+<status status="FAIL" starttime="20200316 12:34:38.398" endtime="20200316 12:34:39.844"></status>
+</kw>
+<status status="FAIL" starttime="20200316 12:34:19.000" endtime="20200316 12:34:39.844" critical="yes">ElementClickInterceptedException: Message: element click intercepted: Element &lt;div class="ck ck-editor__main" role="presentation"&gt;...&lt;/div&gt; is not clickable at point (652, 743). Other element would receive the click: &lt;div class="ck ck-toolbar__items"&gt;...&lt;/div&gt;
+  (Session info: chrome=80.0.3987.132)
+</status>
+</test>
+<status status="FAIL" starttime="20200316 12:33:53.272" endtime="20200316 12:34:39.844"></status>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="1">Critical Tests</stat>
+<stat pass="1" fail="1">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="1" id="s1" name="Coupanproduct">Coupanproduct</stat>
+</suite>
+</statistics>
+<errors>
+<msg timestamp="20200316 12:34:31.383" level="WARN">Keyword 'SeleniumLibrary.Press Key' is deprecated. use `Press Keys` instead.</msg>
+</errors>
+</robot>
